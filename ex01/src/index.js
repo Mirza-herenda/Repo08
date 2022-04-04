@@ -1,6 +1,7 @@
 function reusableFunction() 
 {
-console.log("Hi Padawan!")
+    console.log("Hi Padawan!");
 }
 reusableFunction();
-module.exports=reusableFunction;
+
+module.exports = reusableFunction;

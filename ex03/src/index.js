@@ -1,19 +1,16 @@
-
-function localScope()
- {
-     var myVariable="I am here!";
-    console.log(myVariable);
- }
-
- localScope();
-
- 
- if(typeof myVariable !="undefined")
+function localScope() 
 {
-    console.log('outside localScope',myVariable)
+    var myVariable = "I am here!";
+    console.log(myVariable);
 }
-else
+
+localScope();
+if (typeof myVariable != "undefined") 
+{
+    console.log('outside localScope', myVariable);
+} else 
 {
     console.log('outside localScope UNDEFINED!!!');
 }
-module.exports=localScope;
+
+module.exports = localScope;

@@ -1,10 +1,10 @@
- var dress="little dress";
+var dress = "little dress";
 
 function myDress() 
 {
- var dress="ball gown";
-return dress;  
+    var dress = "ball gown";
+    return dress;
 }
 
-console.log(myDress());
-module.exports=myDress;
+console.log(myDress()); 
+module.exports = myDress;

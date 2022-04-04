@@ -1,25 +1,25 @@
+var myGlobalVariable = 10;
 
-function function1()
+function function1() 
 {
-myLocalVariable=5;    
+    myLocalVariable = 5;
 }
-var myGlobalVariable=10;
 
-
-function function2()
+function function2() 
 {
-    var results = "";
-    if( typeof myGlobalVariable !=undefined)
+    var result = "";
+    if (typeof myGlobalVariable != "undefined") 
     {
-        results+= "myGlobalVariable :"+myGlobalVariable +"\n";
+        result += "myGlobalVariable: " + myGlobalVariable;
     }
+    if (typeof myLocalVariable != "undefined") 
+    {
+        result += " myLocalVariable: " + myLocalVariable;
+    }
+    console.log(result);
 
-    if( typeof myLocalVariable !=undefined)
-    {
-        results+= "myLocalVariable:"+myLocalVariable;
-    }
-    console.log(results);
 }
+
 function1();
 function2();
 
